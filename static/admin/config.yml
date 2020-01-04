@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: taylorpmyers/teratomi
   branch: master
   commit_messages:
