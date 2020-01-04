@@ -4,7 +4,6 @@ import BookPostTemplate from '../../templates/book-post'
 
 const BookPostPreview = ({ entry, widgetFor }) => (
   <BookPostTemplate
-    content={widgetFor('body')}
     description={entry.getIn(['data', 'description'])}
     tags={entry.getIn(['data', 'tags'])}
     title={entry.getIn(['data', 'title'])}
@@ -12,6 +11,7 @@ const BookPostPreview = ({ entry, widgetFor }) => (
     pages={entry.getIn(['data','pages'])}
     amazonlink={entry.getIn(['data','amazonlink'])}
     smashwordslink={entry.getIn(['data','smashwordslink'])}
+    id={entry.getIn(['data','id'])}
   />
 )
 

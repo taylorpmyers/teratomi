@@ -44,7 +44,7 @@ class BookRoll extends React.Component {
                     <div >
                       <p className={`text-white my-0 pb-1 hidden ${isResponsive("sm:inline-block")}`}>{shortenText(post.frontmatter.description, 155)}</p>
                       {post.frontmatter.tags.map(tag => (
-                        <span className={`inline-block text-lg text-teal-600 ${isResponsive("sm:text-pink-700")}`}>{`#${tag}`}&nbsp;</span>
+                        <span key={`${tag}${post.id}`} className={`inline-block text-lg text-teal-600 ${isResponsive("sm:text-pink-700")}`}>{`#${tag}`}&nbsp;</span>
                       ))}
                     </div>
 

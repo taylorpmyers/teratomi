@@ -38,7 +38,7 @@ class FlashRoll extends React.Component {
                     <div >
                       <p className={`hidden text-white text-sm my-0 ${isResponsive("sm:inline-block md:text-base")}`}>{shortenText(post.excerpt, 155)}</p>
                       {post.frontmatter.tags.map(tag => (
-                        <span className={`inline-block text-lg text-teal-600 ${isResponsive("sm:text-pink-700")}`}>{`#${tag}`}&nbsp;</span>
+                        <span key={`${tag}${post.id}`}className={`inline-block text-lg text-teal-600 ${isResponsive("sm:text-pink-700")}`}>{`#${tag}`}&nbsp;</span>
                       ))}
                     </div>
 
