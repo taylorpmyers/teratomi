@@ -1,22 +1,19 @@
 ---
 templateKey: book-post
 featuredimage: /img/under-two-moons-2-.jpg
-date: 2020-01-04T18:59:09.106Z
+date: 2019-12-26T18:59:09.106Z
 pages: '15'
 title: Under Two Moons Part 2
 description: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum mi
-  in dui egestas, a pharetra libero bibendum. Maecenas bibendum orci vel
-  dignissim malesuada. Suspendisse nisi dui, porta at convallis ut, blandit vel
-  purus. Vivamus faucibus sem turpis, in porttitor risus rhoncus eu. Nunc semper
-  dui dictum maximus hendrerit. Curabitur interdum dolor nec metus ornare, a
-  mollis tellus sollicitudin. Curabitur sit amet posuere lectus. Nunc dapibus
-  imperdiet volutpat. Morbi at luctus sem, eu lacinia leo. Quisque id sagittis
-  risus.
+  Holly, with the help of a friend, manages to make her great escape to freedom,
+  and finally finds love and friends in this new and strange place. She has to
+  be careful though because the Baron's men are after them.
 tags:
-  - Breeding
-  - Monster
-amazonlink: 'https://www.lipsum.com/feed/html'
-smashwordslink: 'https://www.lipsum.com/feed/html'
+  - Shifter
+  - BDSM
+  - Sexual Slavery
+amazonlink: >-
+  https://www.amazon.com/Under-Two-Moons-Part-ebook/dp/B08356RS8H/ref=sr_1_3?qid=1578220155&refinements=p_27%3ANaomi+Spicer&s=digital-text&sr=1-3&text=Naomi+Spicer
+smashwordslink: 'https://www.smashwords.com/books/view/997458'
 ---
 
