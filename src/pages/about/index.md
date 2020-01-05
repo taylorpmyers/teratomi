@@ -1,6 +1,4 @@
 ---
-templateKey: 'about-page'
-path: /about
-title: About our values
+templateKey: about-page
 ---
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
+I was an avid reader as a child and wanted to be an author when I grew up. I mostly wrote fan-fiction for a long time (since 2011) and have written two full length novels that I never published when I was younger. I have found my calling in writing erotica, and enjoy writing for the genre quite a lot!
