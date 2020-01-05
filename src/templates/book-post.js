@@ -9,7 +9,7 @@ export const BookPageTemplate = post => {
     const image = post.featuredimage.childImageSharp ? <Img className="flex max-w-md mx-auto" fluid={post.featuredimage.childImageSharp.fluid} /> 
     : <img alt = "preview for post" width="300px" src={post.featuredimage} />
     const date = post.featuredimage.childImageSharp ? post.date : post.date.toISOString().slice(0,10)
-    const checkLink = link => {return link == " " ? "none" : "inline-block"}
+    const checkLink = link => {return link === " " ? "none" : "inline-block"}
     return (
         <div className=" mx-8 mb-10 max-w-2xl">
           <h1 style={{ textDecorationColor: "#B83280" }} className="font-serif underline">{post.title}</h1>
