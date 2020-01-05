@@ -3,7 +3,7 @@ templateKey: book-post
 featuredimage: /img/her-master-the-dragon.jpg
 date: 2019-12-29T08:27:38.234Z
 pages: '19'
-title: 'Her master, The Dragon'
+title: 'Her Master, The Dragon'
 description: >-
   Princess Evie of Turi is given as a prize for her country’s surrender to the
   Empire. The Emperor, a cruel man, gives her away to the terrifying general of
