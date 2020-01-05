@@ -2,7 +2,7 @@
 templateKey: book-post
 featuredimage: /img/under-two-moons-2-.jpg
 date: 2019-12-26T18:59:09.106Z
-pages: '15'
+pages: '21'
 title: Under Two Moons Part 2
 description: >-
   Holly, with the help of a friend, manages to make her great escape to freedom,
