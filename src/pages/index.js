@@ -18,7 +18,7 @@ const IndexPage = () => {
           </aside>
         </div>
       </div>
-      <footer className="bg-black text-white w-full text-center border-t border-grey p-4 pin-b">
+      <footer className="bg-black text-white w-full mt-20 text-center border-t border-grey p-4 pin-b">
         <JoinEmail display="block lg:hidden" />
         © {new Date().getFullYear()}
         {` `}
