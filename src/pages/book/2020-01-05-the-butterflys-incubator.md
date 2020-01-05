@@ -12,7 +12,7 @@ description: >-
 tags:
   - Monsters
   - Oviposition
-  - Breeding
+  - Breeding/Pregnancy
 amazonlink: >-
   https://www.amazon.com/Butterflys-Incubator-Naomi-Spicer-ebook/dp/B083CTC3WX/ref=sr_1_1?qid=1578220155&refinements=p_27%3ANaomi+Spicer&s=digital-text&sr=1-1&text=Naomi+Spicer
 smashwordslink: 'https://www.smashwords.com/books/view/998160'
