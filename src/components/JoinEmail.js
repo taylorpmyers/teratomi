@@ -7,10 +7,10 @@ function JoinEmail(props) {
         <div className={props.display || "block mb-6"}>
             <div className="text-white max-w-xs bg-teal-600 flex flex-wrap mx-auto py-6 justify-center rounded">
                 <div className="block mb-4 mx-4">Join the mailing list to be notified when new content releases.</div>
-                <form className="border rounded overflow-hidden flex" name="emailList" method="POST" data-netlify="true">
-                    <input type="hidden" name="form-name" value="fake-form" />
+                <form className="border rounded overflow-hidden flex" name="emaillist"  method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value = "emaillist" />
                     <input type="email" name="email" className="p1-2 py-2 text-black" placeholder="Your email..."></input>
-                    <button type="submit" className="flex items-center justify-center px-1 bg-pink-700">
+                    <button type="submit" name ="submit" className="flex items-center justify-center px-1 bg-pink-700">
                         Subscribe
                         </button>
                 </form>
