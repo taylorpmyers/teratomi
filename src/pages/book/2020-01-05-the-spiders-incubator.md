@@ -15,7 +15,7 @@ tags:
   - Monster
   - Oviposition
   - Breeding/Pregnancy
-amazonlink: ' '
+amazonlink: ''
 smashwordslink: 'https://www.smashwords.com/books/view/998641'
 ---
 

@@ -33,7 +33,7 @@ class BlogRoll extends React.Component {
                   <div className="ml-2 mt-1 w-md">
                     <p className="text-sm text-white mb-0">Blogs / {post.frontmatter.date}</p>
                     <Link className={`text-xl w-auto mb-0 text-pink-700 inline-block ${isResponsive("sm: text-2xl md:text-3xl")}`} to={post.fields.slug}>
-                      {shortenText(post.frontmatter.title, 30)}
+                      {shortenText(post.frontmatter.title, 40)}
                     </Link>
                     <div >
                       <p className={`hidden text-white text-sm my-0 ${isResponsive("sm:inline-block md:text-base")}`}>{shortenText(post.excerpt, 155)}</p>

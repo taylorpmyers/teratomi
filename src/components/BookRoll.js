@@ -11,8 +11,7 @@ class BookRoll extends React.Component {
     let { edges: posts } = data.allMarkdownRemark
     const shortenText = (text, lng) => { return text.length < lng ? text : text.slice(0, lng).concat("...") }
     const isResponsive = style => {return this.props.isResponsive ? style : ""}
-    const checkAmazon = link => {
-      return !link ? "hidden" : "inline-block"}
+    const checkLink = link => {return !link ? "hidden" : "inline-block"}
     if (this.props.num && this.props.num < posts.length) {
       let temp = posts.slice(0, this.props.num)
       posts = temp
@@ -40,8 +39,8 @@ class BookRoll extends React.Component {
                       {shortenText(post.frontmatter.title, 50)}
                     </Link>
                     <div className={`hidden ${isResponsive("sm:inline-block")}`}>
-                      <a className={`mt-0 ${checkAmazon(post.frontmatter.amazonlink)}`} href={post.frontmatter.amazonlink}><img className="m-1 inline-block" alt="amazon logo" src={amazon} width="200" height="auto"></img></a>
-                      <a className="mt-0" href={post.frontmatter.smashwordslink}><img className="m-1 inline-block" alt="smashwords logo" src={smashwords} width="200" height="auto"></img></a>
+                      <a className={`mt-0 ${checkLink(post.frontmatter.amazonlink)}`} href={post.frontmatter.amazonlink}><img className="m-1 inline-block" alt="amazon logo" src={amazon} width="200" height="auto"></img></a>
+                      <a className={`mt-0 ${checkLink(post.frontmatter.smashwordslink)}`} href={post.frontmatter.smashwordslink}><img className="m-1 inline-block" alt="smashwords logo" src={smashwords} width="200" height="auto"></img></a>
                     </div>
                     <div >
                       <p className={`text-white my-0 pb-1 hidden ${isResponsive("sm:inline-block")}`}>{shortenText(post.frontmatter.description, 155)}</p>

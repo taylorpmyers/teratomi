@@ -9,6 +9,8 @@ export const BookPageTemplate = post => {
     const image = post.featuredimage.childImageSharp ? <Img className="flex max-w-md mx-auto" fluid={post.featuredimage.childImageSharp.fluid} /> 
     : <img alt = "preview for post" width="300px" src={post.featuredimage} />
     const date = post.featuredimage.childImageSharp ? post.date : post.date.toISOString().slice(0,10)
+    console.log(post.amazonlink)
+    const checkLink = link => {return !link ? "none" : "inline-block"}
     return (
         <div className=" mx-8 mb-10 max-w-2xl">
           <h1 style={{ textDecorationColor: "#B83280" }} className="font-serif underline">{post.title}</h1>
@@ -17,8 +19,8 @@ export const BookPageTemplate = post => {
           {image}
           <p className = "mt-10">{post.description}</p>
           <div>
-            <a href={post.amazonlink}><img alt="asdf" className = "mb-5 max-w-xs" src={AmazonButton} /></a>
-            <a href={post.smashwordslink}><img alt="asdf" className = "mb-5 max-w-xs" src={SmashwordsButton} /></a>
+            <a style = {{display: checkLink(post.amazonlink)}}href={post.amazonlink}><img alt="asdf" className = "mb-5 max-w-xs" src={AmazonButton} /></a>
+            <a style = {{display: checkLink(post.smashwordslink)}}href={post.smashwordslink}><img alt="asdf" className = "mb-5 max-w-xs" src={SmashwordsButton} /></a>
           </div>
           <div className="mt-10">
             {post.tags.map(tag => (
