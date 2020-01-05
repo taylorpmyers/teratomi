@@ -15,7 +15,7 @@ const MyLayout = props => {
           <aside className={"hidden lg:block lg:w-4/12"}><NewPosts isResponsive={false} width="min-w-xs" /></aside>
         </div>
       </div>
-      <footer className="bg-black text-white w-full text-center border-t border-grey p-4 pin-b">
+      <footer className="bg-black text-white w-full text-center border-t mt-20 border-grey p-4 pin-b">
         <JoinEmail display = "lg:hidden"/>
         © {new Date().getFullYear()}
         {" "}

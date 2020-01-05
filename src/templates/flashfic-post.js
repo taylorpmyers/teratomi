@@ -4,34 +4,49 @@ import Img from "gatsby-image"
 import MyLayout from "../components/MyLayout"
 import './postStyle.module.css'
 
-class FlashficPostTemplate extends React.Component {
-  render() {
-    const post = this.props.data.markdownRemark
-    return (
-      <MyLayout location={this.props.location} >
-        <div className=" mx-8 mb-10">
-          <h1 style={{ textDecorationColor: "#B83280" }} className="font-serif underline">{post.frontmatter.title}</h1>
-          <h4 className=" font-serif text-teal-600">{post.frontmatter.date}</h4>
-          <Img
-            className="flex max-w-3xl mx-auto"
-            fluid={post.frontmatter.featuredimage.childImageSharp.fluid}
-          />
-          <div className="netlifyContent"
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
-          <div className="mt-10">
-            {post.frontmatter.tags.map(tag => (
-              <span className="inline-block text-lg text-teal-600">{`#${tag}`}&nbsp;</span>
-            ))}
-          </div>
-        </div>
-
-      </MyLayout>
-    )
-  }
+export const FlashficPageTemplate = post => {
+  post.date = post.date.toISOString().slice(0,10)
+  return (
+    <div  className=" mx-8 mb-10 post">
+      <h1 style={{ textDecorationColor: "#B83280" }} className="font-serif underline">{post.title}</h1>
+      <h4 className=" font-serif text-teal-600">{post.date}</h4>
+      <img alt = "preview for post"src = {post.featuredimage}></img>
+      <div className="netlifyContent">{post.content}</div>
+      <div className="mt-10">
+        {post.tags.map(tag => (
+          <span key={`${tag}${post.title}`} className="inline-block text-lg text-teal-600">{`#${tag}`}&nbsp;</span>
+        ))}
+      </div>
+    </div>
+  )
 }
 
-export default FlashficPostTemplate
+
+const FlashficPage = ({ data }) => {
+  const { markdownRemark: post } = data
+  return (
+    <MyLayout>
+      <div className=" mx-8 mb-10">
+        <h1 style={{ textDecorationColor: "#B83280" }} className="font-serif underline">{post.frontmatter.title}</h1>
+        <h4 className=" font-serif text-teal-600">{post.frontmatter.date}</h4>
+        <Img
+          className="flex max-w-3xl mx-auto"
+          fluid={post.frontmatter.featuredimage.childImageSharp.fluid}
+        />
+        <div className="netlifyContent"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+        <div className="mt-10">
+          {post.frontmatter.tags.map(tag => (
+            <span className="inline-block text-lg text-teal-600">{`#${tag}`}&nbsp;</span>
+          ))}
+        </div>
+      </div>
+    </MyLayout>
+  )
+}
+
+export default FlashficPage
 
 export const pageQuery = graphql`
   query FlashficPostBySlug($slug: String!) {

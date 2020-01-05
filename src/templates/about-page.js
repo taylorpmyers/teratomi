@@ -21,10 +21,10 @@ export const AboutPageTemplate = ({ content, contentComponent }) => {
         <PageContent className="content mx-6 md:mt-8" content={content} />
       </div>
       <div className = "flex flex-wrap justify-around mt-6">
-        <img className = "w-full sm:w-1/2 max-w-xs mt-2" alt = "link to amazon store" src = {amazon}/>
-        <img className = "w-full sm:w-1/2 max-w-xs mt-2" alt = "link to smashwords store" src = {smashwords} />
-        <img className = "w-full sm:w-1/2 max-w-xs mt-2" alt = "link to twitter profile" src = {twitter}/>
-        <img className = "w-full sm:w-1/2 max-w-xs mt-2" alt = "link to patreon" src = {patreon} />
+        <a className = "w-full sm:w-1/2 max-w-xs mt-2" href = {`https://www.amazon.com/s?i=digital-text&rh=p_27%3ANaomi+Spicer&s=relevancerank&text=Naomi+Spicer&ref=dp_byline_sr_ebooks_1`}><img alt = "link to amazon store" src = {amazon}/></a>
+        <a className = "w-full sm:w-1/2 max-w-xs mt-2" href = "https://www.smashwords.com/profile/view/teratonaomi"><img alt = "link to smashwords store" src = {smashwords} /></a>
+        <a className = "w-full sm:w-1/2 max-w-xs mt-2" href = "https://twitter.com/naomi_spicer"><img alt = "link to twitter profile" src = {twitter}/></a>
+        <a className = "w-full sm:w-1/2 max-w-xs mt-2" href = "https://www.patreon.com/teratomi"><img alt = "link to patreon" src = {patreon} /></a>
         </div>      
     </section>
   )

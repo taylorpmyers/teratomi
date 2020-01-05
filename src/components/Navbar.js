@@ -14,7 +14,7 @@
         <div className = "flex flex-wrap w-full md:max-w-4xl md:justify-between">
         <div className="flex items-center flex-shrink-0 text-white">
         <img className=" h-8 w-8 ml-2 mr-2" alt="teratomi logo" src={teratomi}></img>
-          <span className="font-semibold text-xl text-pink-700 tracking-widest"><Link to="/">Teratomi</Link></span>
+          <span className="font-semibold text-xl text-pink-700 tracking-widest"><Link className = "font-serif"to="/">Teratomi</Link></span>
         </div>
         <div className="ml-auto block md:hidden">
           <button onClick={() => toggleExpansion(!isExpanded)} className="flex items-center px-3 py-2 border rounded text-pink-700 border-pink-700 hover:text-white hover:border-white">
@@ -28,10 +28,10 @@
             <Link to="/flashfic" activeClassName="text-pink-700"className="block mt-4 md:inline-block md:mt-0 text-white hover:text-pink-700 ml-4">FLASH FIC</Link>
           </div>
           <div style = {{width: "179px"}} className={`${ isExpanded ? `block` : `hidden` } md:block mt-2 flex md:items-center w-full md:w-auto `}>
-            <a className="inline-block text-sm leading-none ml-2 md:mt-0" href="https://www.twitter.com/"><img alt="twitter logo" src={twitter} width="32" height="32"></img></a>
-            <a className="inline-block text-sm leading-none ml-2 md:mt-0" href="https://www.amazon.com/"><img alt="amazon logo" src={amazon} width="32" height="32"></img></a>
-            <a className="inline-block text-sm leading-none ml-2 md:mt-0" href="https://www.patreon.com/"><img alt="patreon logo" src={patreon} width="32" height="32"></img></a>
-            <a className="inline-block text-sm leading-none ml-2 mr-2 md:mt-0" href="https://www.smashwords.com/"><img alt="smashwords logo" src={smashwords} width="32" height="32"></img></a>
+            <a className="inline-block text-sm leading-none ml-2 md:mt-0" href="https://twitter.com/naomi_spicer/"><img alt="twitter logo" src={twitter} width="32" height="32"></img></a>
+            <a className="inline-block text-sm leading-none ml-2 md:mt-0" href={`https://www.amazon.com/s?i=digital-text&rh=p_27%3ANaomi+Spicer&s=relevancerank&text=Naomi+Spicer&ref=dp_byline_sr_ebooks_1`}><img alt="amazon logo" src={amazon} width="32" height="32"></img></a>
+            <a className="inline-block text-sm leading-none ml-2 md:mt-0" href="https://www.patreon.com/teratomi"><img alt="patreon logo" src={patreon} width="32" height="32"></img></a>
+            <a className="inline-block text-sm leading-none ml-2 mr-2 md:mt-0" href="https://www.smashwords.com/profile/view/teratonaomi"><img alt="smashwords logo" src={smashwords} width="32" height="32"></img></a>
           </div>
         </div>
       </nav>

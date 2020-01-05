@@ -17,7 +17,7 @@ function JoinEmail(props) {
             </div>
             <div className="text-white max-w-xs bg-black flex flex-wrap mx-auto mt-8 py-6 justify-center rounded">
                 <div className="block mb-4 mx-4">To support me, get deals on books and early access to blogs and flash fics become a patron.</div>
-                <img className = "w-64" alt="patreon logo next to subscribe button" src={PatreonButton} />
+                <a href = "https://www.patreon.com/teratomi"><img className = "w-64" alt="patreon logo next to subscribe button" src={PatreonButton} /></a>
             </div>
         </div>
     )
