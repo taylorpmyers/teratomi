@@ -10,7 +10,7 @@ description: >-
   his army, who only has the worst rumors floating around about him. A man, no,
   a demon, who kills without batting an eye. How is Evie going to survive?
 tags:
-  - Monster
+  - Shifter
   - Interracial
   - Virgin
 amazonlink: >-
