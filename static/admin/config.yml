@@ -39,8 +39,8 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Amazon Link", name: "amazonlink", widget: "string",optional:true}
-      - {label: "Smashwords Link", name: "smashwordslink", widget: "string",optional:true}
+      - {label: "Amazon Link", name: "amazonlink", widget: "string",optional: true}
+      - {label: "Smashwords Link", name: "smashwordslink", widget: "string",optional: true}
   - name: "flashfic"
     label: "Flashfic"
     folder: "src/pages/flashfic"
